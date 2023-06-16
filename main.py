@@ -25,16 +25,13 @@ class Personne:
     def afficher(self):
         print('Je suis ', self.prenom, 'et j ai', self.age)
 
-
 # Création des objets
 
-p1 = Personne('babari', 'raouf', 31)
-p2 = Personne('bachir', 'Fikry', 25)
-p3 = Personne('Nabil', 'Agsous', 'immortel')
-
+liste = []
+liste.append(Personne('babari', 'raouf', 31))
+liste.append(Personne('bachir', 'Fikry', 25))
+liste.append(Personne('Nabil', 'Agsous', 40))
 
 # Les objets de la même classe se comportemt souvent de la même manière ...
-
-p1.afficher()
-
-#Etudiant
+for x in liste:
+    x.afficher()
