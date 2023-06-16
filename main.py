@@ -9,9 +9,6 @@ Une petie révision ::
 
 # Le constructeur permet de créer des objets
 
-
-
-
 # 4 pliers de l'OO : encapsulation / abstraction / héritage / polymorphisme
 
 #class ::
@@ -34,4 +31,8 @@ liste.append(Personne('Nabil', 'Agsous', 40))
 
 # Les objets de la même classe se comportemt souvent de la même manière ...
 for x in liste:
-    x.afficher()
+    print(x)
+
+
+#Exercice Créer une liste de 4 Voiture
+# Trouver un moyen pour informer quelle personne conduit quelle voiture ???
