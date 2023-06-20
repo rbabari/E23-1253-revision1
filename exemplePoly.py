@@ -12,7 +12,6 @@ Une petie révision ::
 # 4 pliers de l'OO : encapsulation / abstraction / héritage / polymorphisme
 
 #class ::
-
 class Personne:
     def __init__(self, p_nom, p_prenom, p_age):
         self.nom = p_nom
@@ -22,7 +21,18 @@ class Personne:
     def afficher(self):
         print('Je suis ', self.prenom, 'et j ai', self.age)
 
-# Création des objets
+
+
+# Un Etudiant(+NumEtudiant, Groupe, AnneeGraduation) est une Personne(nom,prenom,age)
+# Un Employé(+NumEmployee, Service, Bureau) == c'est une Personne
+# Un Enseignant ( + Département) est un Employé
+
+
+
+
+
+
+# Création des objets : Instantiation
 
 liste = []
 liste.append(Personne('babari', 'raouf', 31))
