@@ -18,7 +18,7 @@ class Personne:
         self.prenom = p_prenom
         self.age = p_age
 
-    def afficher(self):
+    def presenteToi(self):
         print('Je suis ', self.prenom, 'et j ai', self.age)
 
 #class Etudiant hérite de Personne ::
@@ -29,6 +29,10 @@ class Etudiant(Personne):
         self.NumEtudiant = p_NumEtudiant
         self.Groupe = p_Groupe
         self.AnneeGraduation =p_AnneeGraduation
+
+    def presenteToi(self):
+        print('Je suis ', self.prenom, 'et suis dans le gr : ', self.Groupe)
+
 """
   # constructeur V2 en utilisant un objet de type Personne (parent)
     def __init__(self, p_nom, p_prenom, p_age, p_NumEtudiant, p_Groupe, p_AnneeGraduation):
@@ -62,7 +66,7 @@ liste.append(E2)
 
 
 for x in liste:
-    x.afficher()
+    x.presenteToi()
 
 
 #Exercice Créer une liste de 4 Voiture
